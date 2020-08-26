@@ -1,8 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
 <html> 
 <head>
 <link rel="icon" href="photo.jpg">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<META http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
 <title>Js.cool 就是酷</title> 
 <style> 
 .main{
@@ -18,13 +22,31 @@ left: 0;
 right: 0;
 bottom: 0;
 }
-</style> 
+</style>
+<script>
+  function changeColor(){
+  x=document.getElementById("Id1");
+  x.style.color="Red";
+  }
+  function changeContent(){
+  y=document.getElementById("Id2");
+  y.innerHTML="Hi, you have changed the contents using Java Script successfully!";
+  }
+  </script>
 </head> 
 <body bgcolor="#FACC2E"></body>
 	<div class="main">
 		<h1  style="font-family:verdana">Js</h1><h2 style="font-family:verdana">cool</h2>
 		</br>
 	<center style="font-family:courier">为国人开源项目提供免费的子域名的项目</center>
+	 <p id="Id1">It is test 1.</p>
+  <p id="Id2">It is test 2.</p>
+  <button type="button" onclick ="changeColor()">
+    Change color of test 1
+  </button><br/><br/>
+  <button type="button" onclick ="changeContent()">
+    Change content of test 2
+  </button>
 	</div>
 </body>
 </html> 
